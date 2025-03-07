@@ -21,7 +21,7 @@ After pretraining, you can run the evaluation. `--use_time_embed` enables TE dur
     
 ## Citation
 
-Please consider citing TC paper if it is useful for you:
+Please consider citing the paper if it is useful for you:
 
 ```
 ```
