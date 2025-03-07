@@ -1,0 +1,21 @@
+Bootstrap: docker
+From: pytorch/pytorch:2.2.2-cuda11.8-cudnn8-devel
+%post
+  apt-get update && apt-get install git python3-dev default-libmysqlclient-dev build-essential ffmpeg libsm6 libxext6 -y
+  conda update -n base -c defaults conda
+  pip install keras opencv-python cython numpy Augmentor scikit-image plotly scikit-learn pydicom natsort pandas SQLAlchemy
+  pip install pylint sh rope nibabel tensorboard scikit-image>=0.14.2 coverage parameterized monai==1.0.1 openpyxl tensorboardX
+  pip install matplotlib seaborn h5py Pillow plotly protobuf joblib voila spython
+  pip install torchvision
+  pip install pytorchvideo 
+  pip install traitlets>=5.1.1
+  pip install pygments>=2.4.1
+  pip install jupyterlab notebook ipywidgets
+  pip install ray timm tqdm
+%environment
+    export LC_ALL=C
+%runscript
+    exec /bin/bash "$@"
+%startscript
+    exec /bin/bash "$@"
+    
