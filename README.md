@@ -10,7 +10,7 @@
 ## Training
 
 ### Self-supervised training
-This script is specifically for STAMP, but we included model and loss definitions that are used in testing. The ablation studies and comparisons can be run in the similar manner, please see /src/models/vicreg for all available models.
+This script is specifically for STAMP, but we included model and loss definitions that are used in testing. The ablation studies and comparisons can be run in the similar manner, please see /src/models/... for all available models.
 
     python stamp.py --save_dir=/experiment_1 --epochs=800 --lr=0.0003 --lr_sch=cosine --wd=1e-2 --batch_size=48 --grad_norm_clip=3.0 --num_workers=12 --ssl_data_dir=/pretraining_data --exclude_nb  --backbone=STAMP --in_ch=1 --warmup_epochs=20 --min_diff=90 --max_diff=540 --beta2=0.95 --p_hflip=0.5
     
