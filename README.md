@@ -17,7 +17,7 @@ This script is specifically for STAMP, but we included model and loss definition
 ### AttentionPool Evaluation
 After pretraining, you can run the evaluation. `--use_time_embed` enables TE during the inference. `--stoch_nsample` controls the number of stochastic sampling during the inference
 
-    python attnpool_vit3d.py --save_dir=/attention_pool --data_dir=/supervised_data --fold=0 --pretrained --pretrained_model=/experiment_1/epoch_800.tar --epochs=200 --batch_size=128 --optim=AdamW --wd=0.0 --lw=10 --warmup_epochs=10 --lr=1e-3 --backbone=vit3d_base_patch16 --grad_norm_clip=3.0 --beta2=0.999 --num_workers=15 --use_stoch --stoch_nsample=10 --use_time_embed
+    python attnpool_vit3d.py --save_dir=/attention_pool --data_dir=/supervised_data --fold=0 --pretrained --pretrained_model=/experiment_1/epoch_800.tar --epochs=200 --batch_size=128 --optim=AdamW --wd=0.0 --lw=10 --warmup_epochs=10 --lr=1e-3 --backbone=vit3d_base_patch16 --grad_norm_clip=3.0 --beta2=0.999 --num_workers=15 --use_stoch --stoch_nsample=1 --use_time_embed
     
 ## Citation
 
