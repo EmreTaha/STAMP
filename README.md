@@ -1,4 +1,4 @@
-# STAMP
+# Stochastic Siamese MAE Pretraining for Longitudinal Medical Images
 
 ## Requirements
 - See the singularity .def file
