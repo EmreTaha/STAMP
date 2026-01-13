@@ -24,4 +24,10 @@ After pretraining, you can run the evaluation. `--use_time_embed` enables TE dur
 Please consider citing the paper if it is useful for you:
 
 ```
+@article{emre2025stochastic,
+  title={Stochastic Siamese MAE Pretraining for Longitudinal Medical Images},
+  author={Emre, Taha and Chakravarty, Arunava and Pinetz, Thomas and Lachinov, Dmitrii and Menten, Martin J and Scholl, Hendrik and Sivaprasad, Sobha and Rueckert, Daniel and Lotery, Andrew and Sacu, Stefan and Schmidt-Erfurth, Ursula and Bogunović, Hrvoje},
+  journal={arXiv preprint arXiv:2512.23441},
+  year={2025}
+}
 ```
